@@ -1,0 +1,14 @@
+<!-- <p>edit-component works!</p> -->
+
+<p>Use the form below to update your profile</p>
+
+<form #profileForm="ngForm" (ngSubmit)="update(profileForm)">
+  <label for="name">Name</label>
+  <input type="text" id="name" ngModel>
+  <label for="contact">Contact</label>
+  <input type="text" id="contact" ngModel>
+  <label for="bio">Bio</label>
+  <input type="text" id="bio" ngModel>
+
+  <button>Update</button>
+</form>
